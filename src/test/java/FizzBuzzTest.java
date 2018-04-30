@@ -10,7 +10,7 @@ public class FizzBuzzTest{
     public void shouldReturnTrueWhenTheNumberIsMultipleByThree(){
         FizzBuzz fizzbuzz = new FizzBuzz();
 
-        assertThat("Number must be multiple of three!",fizzbuzz.isMultipleByThree(6), is(true)); 
+        assertThat(fizzbuzz.isMultipleByThree(6), is(true)); 
         // assertThat(reason, actual, matcher);       
     }
 
@@ -19,5 +19,19 @@ public class FizzBuzzTest{
         FizzBuzz fizzbuzz = new FizzBuzz();
 
         assertThat(fizzbuzz.isMultipleByThree(4), is(false));     
+    }
+
+    @Test
+    public void shouldReturnTrueWhenTheNumberIsMultipleByFive(){
+        FizzBuzz fizzbuzz = new FizzBuzz();
+
+        assertThat(fizzbuzz.isMultipleByFive(10), is(true));
+    }
+
+    @Test
+    public void shouldReturnFalseWhenTheNumberNotIsMultipleByFive(){
+        FizzBuzz fizzbuzz = new FizzBuzz();
+
+        assertThat(fizzbuzz.isMultipleByFive(8), is(false));
     }
 }
