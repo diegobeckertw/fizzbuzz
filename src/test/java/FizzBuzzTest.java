@@ -34,4 +34,18 @@ public class FizzBuzzTest{
 
         assertThat(fizzbuzz.isMultipleByFive(8), is(false));
     }
+
+    @Test
+    public void shouldReturnTrueWhenTheNumberIsMultipleByThreeAndFive(){
+        FizzBuzz fizzbuzz = new FizzBuzz();
+
+        assertThat(fizzbuzz.isMultipleByThreeAndFive(15), is(true));
+    }
+
+    @Test
+    public void shouldReturnFalseWhenTheNumberNotIsMultipleByThreeAndFive(){
+        FizzBuzz fizzbuzz = new FizzBuzz();
+
+        assertThat(fizzbuzz.isMultipleByThreeAndFive(8), is(false));
+    }
 }

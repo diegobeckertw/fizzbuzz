@@ -7,4 +7,8 @@ public class FizzBuzz{
     public boolean isMultipleByFive(int num){
         return (num % 5 == 0);
     }
+
+	public boolean isMultipleByThreeAndFive(int num) {
+		return (isMultipleByThree(num) && isMultipleByFive(num));
+	}
 }
