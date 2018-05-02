@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="FizzBuzzTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2018-04-30T13:33:11" hostname="Diegos-MacBook-Pro.local" time="0.007">
+<testsuite name="FizzBuzzTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2018-05-02T12:52:40" hostname="Diegos-MacBook-Pro.local" time="0.005">
   <properties/>
   <testcase name="shouldReturnTrueWhenTheNumberIsMultipleByThreeAndFive" classname="FizzBuzzTest" time="0.003"/>
-  <testcase name="shouldReturnTrueWhenTheNumberIsMultipleByFive" classname="FizzBuzzTest" time="0.001"/>
+  <testcase name="shouldReturnTrueWhenTheNumberIsMultipleByFive" classname="FizzBuzzTest" time="0.0"/>
   <testcase name="shouldReturnFalseWhenTheNumberNotIsMultipleByFive" classname="FizzBuzzTest" time="0.0"/>
   <testcase name="shouldReturnTrueWhenTheNumberIsMultipleByThree" classname="FizzBuzzTest" time="0.0"/>
   <testcase name="shouldReturnFalseWhenTheNumberNotIsMultipleByThree" classname="FizzBuzzTest" time="0.0"/>
