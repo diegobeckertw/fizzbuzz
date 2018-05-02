@@ -1,18 +1,18 @@
 public class FizzBuzz{
 
-    public static boolean isMultipleByThree(int num){
+    public boolean isMultipleByThree(int num){
         return (num % 3 == 0);
     }
 
-    public static boolean isMultipleByFive(int num){
+    public boolean isMultipleByFive(int num){
         return (num % 5 == 0);
     }
 
-	public static boolean isMultipleByThreeAndFive(int num) {
+	public boolean isMultipleByThreeAndFive(int num) {
 		return (isMultipleByThree(num) && isMultipleByFive(num));
     }
     
-    public static void main(String[] args) {
+    public void main(String[] args) {
         String msgReturn;
         for(int i = 1; i <= 100; i++){
             if(isMultipleByThreeAndFive(i)){
