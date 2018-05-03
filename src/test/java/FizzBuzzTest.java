@@ -19,4 +19,9 @@ public class FizzBuzzTest{
     public void shouldReturnFizzForNumberMultipleByThree() {
         assertThat(fizzbuzz.convertNumber(6), is("Fizz"));
     }
+
+    @Test
+    public void shouldReturnBuzzForNumberMultipleByFive() {
+        assertThat(fizzbuzz.convertNumber(10), is("Buzz"));
+    }
 }
