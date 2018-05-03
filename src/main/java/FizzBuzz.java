@@ -1,30 +1,33 @@
 public class FizzBuzz{
 
-    public boolean isMultipleByThree(int num){
-        return (num % 3 == 0);
+    FizzBuzzUtils utils = new FizzBuzzUtils();
+
+    public String convertNumber(int number) {
+        if(utils.isMultipleByThreeAndFive(number)) {
+            return "FizzBuzz";
+        } else if(utils.isMultipleByFive(number)) {
+            return "Buzz";
+        } else if(utils.isMultipleByThree(number)) {
+            return "Fizz";
+        }
+
+        return Integer.toString(number);
     }
 
-    public boolean isMultipleByFive(int num){
-        return (num % 5 == 0);
-    }
-
-	public boolean isMultipleByThreeAndFive(int num) {
-		return (isMultipleByThree(num) && isMultipleByFive(num));
+    public void run(FizzBuzz fizzbuzz) {
+        for(int i = 1; i <= 100; i++){
+            // testar se foi chamado
+            // usar mock para testar
+            // criar uma classe printer para printar 
+            System.out.println(fizzbuzz.convertNumber(i));
+        }
     }
     
-    public void main(String[] args) {
-        String msgReturn;
-        for(int i = 1; i <= 100; i++){
-            if(isMultipleByThreeAndFive(i)){
-                msgReturn = "FizzBuzz";
-            }else if(isMultipleByFive(i)){
-                msgReturn = "Buzz";
-            }else if(isMultipleByThree(i)){
-                msgReturn = "Fizz";
-            }else{
-                msgReturn = Integer.toString(i);
-            }
-            System.out.println(msgReturn);
-        }
+    public static void main(String[] args) {
+        
+        FizzBuzz fizzbuzz = new FizzBuzz();
+        fizzbuzz.run(fizzbuzz);
+        
+        
     }
 }
