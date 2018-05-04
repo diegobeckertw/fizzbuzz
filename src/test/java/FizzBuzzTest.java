@@ -5,6 +5,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 import org.junit.Before;
 import org.junit.Test;
+import org.mockito.Mockito;
 
 public class FizzBuzzTest{
 
@@ -24,4 +25,15 @@ public class FizzBuzzTest{
     public void shouldReturnBuzzForNumberMultipleByFive() {
         assertThat(fizzbuzz.convertNumber(10), is("Buzz"));
     }
+
+    @Test
+    public void returnTrueWhenMethodPrintIsInvoked() {
+        Printer printerMock = Mockito.mock(Printer.class);
+
+        fizzbuzz.run(fizzbuzz, printerMock);
+
+        Mockito.verify(printerMock).print(fizzbuzz.convertNumber(4));
+    }
+
+
 }

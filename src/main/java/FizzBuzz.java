@@ -14,15 +14,15 @@ public class FizzBuzz{
         return Integer.toString(number);
     }
 
-    public void run(FizzBuzz fizzbuzz) {
+    public void run(FizzBuzz fizzbuzz, Printer printer) {
         for(int i = 1; i <= 100; i++){
-            Printer printer = new Printer();
             printer.print(fizzbuzz.convertNumber(i));
         }
     }
     
     public static void main(String[] args) {  
         FizzBuzz fizzbuzz = new FizzBuzz();
-        fizzbuzz.run(fizzbuzz);
+        Printer printer = new Printer();
+        fizzbuzz.run(fizzbuzz, printer);
     }
 }
