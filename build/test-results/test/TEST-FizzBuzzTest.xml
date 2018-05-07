@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="FizzBuzzTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2018-05-04T17:33:57" hostname="Diegos-MacBook-Pro.local" time="0.067">
+<testsuite name="FizzBuzzTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2018-05-07T13:53:30" hostname="Diegos-MacBook-Pro.local" time="0.471">
   <properties/>
-  <testcase name="returnTrueWhenMethodPrintIsInvoked" classname="FizzBuzzTest" time="0.066"/>
-  <testcase name="shouldReturnFizzForNumberMultipleByThree" classname="FizzBuzzTest" time="0.0"/>
-  <testcase name="shouldReturnBuzzForNumberMultipleByFive" classname="FizzBuzzTest" time="0.0"/>
+  <testcase name="returnFizzForNumberMultipleByThree" classname="FizzBuzzTest" time="0.004"/>
+  <testcase name="returnTrueWhenMethodPrintIsInvoked" classname="FizzBuzzTest" time="0.465"/>
+  <testcase name="returnFizzBuzzForNumberMultiopleByThreeAndFive" classname="FizzBuzzTest" time="0.001"/>
+  <testcase name="returnBuzzForNumberMultipleByFive" classname="FizzBuzzTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

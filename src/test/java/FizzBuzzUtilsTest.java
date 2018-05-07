@@ -15,32 +15,32 @@ public class FizzBuzzUtilsTest {
     }
 
     @Test
-    public void shouldReturnTrueWhenTheNumberIsMultipleByThree(){
+    public void returnTrueWhenTheNumberIsMultipleByThree(){
         assertThat(fizzBuzzUtils.isMultipleByThree(6), is(true));      
     }
 
     @Test
-    public void shouldReturnFalseWhenTheNumberNotIsMultipleByThree(){
+    public void returnFalseWhenTheNumberNotIsMultipleByThree(){
         assertThat(fizzBuzzUtils.isMultipleByThree(4), is(false));     
     }
 
     @Test
-    public void shouldReturnTrueWhenTheNumberIsMultipleByFive(){
+    public void returnTrueWhenTheNumberIsMultipleByFive(){
         assertThat(fizzBuzzUtils.isMultipleByFive(10), is(true));
     }
 
     @Test
-    public void shouldReturnFalseWhenTheNumberNotIsMultipleByFive(){
+    public void returnFalseWhenTheNumberNotIsMultipleByFive(){
         assertThat(fizzBuzzUtils.isMultipleByFive(8), is(false));
     }
 
     @Test
-    public void shouldReturnTrueWhenTheNumberIsMultipleByThreeAndFive(){
+    public void returnTrueWhenTheNumberIsMultipleByThreeAndFive(){
         assertThat(fizzBuzzUtils.isMultipleByThreeAndFive(15), is(true));
     }
 
     @Test
-    public void shouldReturnFalseWhenTheNumberNotIsMultipleByThreeAndFive(){
+    public void returnFalseWhenTheNumberNotIsMultipleByThreeAndFive(){
         assertThat(fizzBuzzUtils.isMultipleByThreeAndFive(8), is(false));
     }
 }

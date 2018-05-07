@@ -1,8 +1,10 @@
 
+import static org.hamcrest.MatcherAssert.*;
 import static org.hamcrest.core.Is.is;
 
-import static org.hamcrest.MatcherAssert.assertThat;
+import static org.mockito.Mockito.*;
 
+import org.hamcrest.MatcherAssert;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mockito;
@@ -17,22 +19,28 @@ public class FizzBuzzTest{
     }
 
     @Test
-    public void shouldReturnFizzForNumberMultipleByThree() {
+    public void returnFizzForNumberMultipleByThree() {
         assertThat(fizzbuzz.convertNumber(6), is("Fizz"));
     }
 
     @Test
-    public void shouldReturnBuzzForNumberMultipleByFive() {
+    public void returnBuzzForNumberMultipleByFive() {
+
         assertThat(fizzbuzz.convertNumber(10), is("Buzz"));
     }
 
     @Test
+    public void returnFizzBuzzForNumberMultiopleByThreeAndFive() {
+        assertThat(fizzbuzz.convertNumber(15), is("FizzBuzz"));
+    }
+
+    @Test
     public void returnTrueWhenMethodPrintIsInvoked() {
-        Printer printerMock = Mockito.mock(Printer.class);
+        Printer printerMock = mock(Printer.class);
 
         fizzbuzz.run(fizzbuzz, printerMock);
 
-        Mockito.verify(printerMock).print(fizzbuzz.convertNumber(4));
+        verify(printerMock).print(fizzbuzz.convertNumber(4));
     }
 
 
